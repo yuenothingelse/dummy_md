@@ -34,6 +34,8 @@ Proyek ini menyediakan fitur pengelolaan produk, pengguna, keranjang belanja, ch
 | 🖥️ Multiple Interfaces | Menggunakan GUI Java Swing atau CLI |
 | 🧱 Layered Structure | Memisahkan model, repository, service, dan antarmuka aplikasi |
 
+---
+
 ## 🔄 Application Workflow
 
 ### 👤 Admin
