@@ -9,7 +9,6 @@
   <img src="https://img.shields.io/badge/Java%20Swing-GUI-007396?style=for-the-badge&logo=java&logoColor=white" alt="Java Swing" />
   <img src="https://img.shields.io/badge/CLI-Console-5382A1?style=for-the-badge" alt="CLI" />
   <img src="https://img.shields.io/badge/OOP-Project-6C63FF?style=for-the-badge" alt="OOP Project" />
-  <img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge" alt="MIT License" />
 </p>
 
 Aplikasi pengelolaan supermarket yang dikembangkan menggunakan **Java** dengan dua pilihan antarmuka, yaitu **Graphical User Interface (GUI)** menggunakan Java Swing dan **Command Line Interface (CLI)**.
@@ -34,26 +33,6 @@ Proyek ini menyediakan fitur pengelolaan produk, pengguna, keranjang belanja, ch
 | ✅ Transaction Verification | Admin dapat memeriksa dan memverifikasi transaksi |
 | 🖥️ Multiple Interfaces | Menggunakan GUI Java Swing atau CLI |
 | 🧱 Layered Structure | Memisahkan model, repository, service, dan antarmuka aplikasi |
-
-## 🖥️ Preview
-
-> **Screenshot di bawah merupakan placeholder.** Buat folder `screenshots/`, masukkan screenshot aplikasi, lalu sesuaikan nama file gambar pada bagian ini.
-
-### 🔑 Login
-
-<img src="screenshots/login.png" alt="Login Screen - replace with actual screenshot" width="700">
-
-### 🛍️ Customer Dashboard
-
-<img src="screenshots/customer-dashboard.png" alt="Customer Dashboard - replace with actual screenshot" width="700">
-
-### 🛠️ Admin Dashboard
-
-<img src="screenshots/admin-dashboard.png" alt="Admin Dashboard - replace with actual screenshot" width="700">
-
-### 🧾 Transaction
-
-<img src="screenshots/transaction.png" alt="Transaction Screen - replace with actual screenshot" width="700">
 
 ## 🔄 Application Workflow
 
@@ -132,7 +111,7 @@ supermarket-app/
 │       │   ├── TransactionService.java
 │       │   └── UserService.java
 │       │
-│       ├── ui/                 # Command Line Interface
+│       ├── ui/                 # CLI
 │       │   ├── AdminMenu.java
 │       │   ├── CustomerMenu.java
 │       │   └── ...
@@ -273,11 +252,11 @@ This project was developed collaboratively by:
 
 ## 📦 Repository Maintainer
 
-**Mirza Nur Akhyar**
+**Naila**
 
-GitHub: [@yuenothingelse](https://github.com/yuenothingelse)
+GitHub: [@nailasyakira](https://github.com/nailasyakira)
 
-The repository was initially created and is maintained by the repository maintainer to organize, manage, and publish the project source code.
+The repository is maintained by Naila to organize, manage, and publish the project source code.
 
 ## 🎯 Purpose
 
@@ -293,10 +272,6 @@ Through this project, the development team practiced:
 - 🔐 Implementing authentication and role-based access.
 - 🛒 Managing products, shopping carts, and transactions.
 - 🤝 Collaborating through Git and GitHub.
-
-## 📄 License
-
-This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) file for details.
 
 <div align="center">
 
