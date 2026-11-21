@@ -38,7 +38,7 @@ Proyek ini menyediakan fitur pengelolaan produk, pengguna, keranjang belanja, ch
 <br>
 
 
-## 🔄 Application Workflow
+## 🔀 Application Workflow
 
 ### 👤 Admin
 
@@ -162,7 +162,7 @@ javac -version
 
 Run all commands from the project's root directory (the directory containing `src/`).
 
-### 🍎 macOS / Linux
+### macOS / Linux
 
 **1. Compile the source code**
 
@@ -183,7 +183,7 @@ java -cp out supermarket.gui.MainGUI
 java -cp out supermarket.Main
 ```
 
-### 🪟 Windows (PowerShell)
+### Windows (PowerShell)
 
 **1. Compile the source code**
 
@@ -204,7 +204,7 @@ java -cp out supermarket.gui.MainGUI
 java -cp out supermarket.Main
 ```
 
-### 🪟 Windows (Command Prompt)
+### Windows (Command Prompt)
 
 ```bat
 if not exist out mkdir out
@@ -269,6 +269,8 @@ This project was developed collaboratively by:
 | [@nailasyakira](https://github.com/nailasyakira) | Naila |
 | [@yuenothingelse](https://github.com/yuenothingelse) | Mirza |
 
+<br>
+
 ## 📦 Repository Maintainer
 
 **Naila**
@@ -276,6 +278,8 @@ This project was developed collaboratively by:
 GitHub: [@nailasyakira](https://github.com/nailasyakira)
 
 The repository is maintained by Naila to organize, manage, and publish the project source code.
+
+<br>
 
 ## 🎯 Purpose
 
@@ -291,9 +295,10 @@ Through this project, the development team practiced:
 - 🔐 Implementing authentication and role-based access.
 - 🛒 Managing products, shopping carts, and transactions.
 - 🤝 Collaborating through Git and GitHub.
+<br>
 
 <div align="center">
-
+  
 ## Made with Java ☕ and teamwork
 
 </div>
