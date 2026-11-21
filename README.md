@@ -35,7 +35,6 @@ Proyek ini menyediakan fitur pengelolaan produk, pengguna, keranjang belanja, ch
 | 🧱 Layered Structure | Memisahkan model, repository, service, dan antarmuka aplikasi |
 
 
----
 <br>
 
 
@@ -64,7 +63,7 @@ Customer menggunakan aplikasi untuk melihat produk dan melakukan pembelian.
 6. Customer memilih metode pembayaran yang tersedia.
 7. Customer dapat melihat riwayat serta detail transaksi.
 
----
+<br>
 
 
 ## 🛠️ Technologies
@@ -138,7 +137,7 @@ supermarket-app/
 └── LICENSE
 ```
 
----
+<br>
 
 
 ## 📋 Requirements
@@ -156,7 +155,7 @@ java -version
 javac -version
 ```
 
----
+<br>
 
 
 ## 🚀 Run the Project
@@ -241,7 +240,7 @@ Sample products are also initialized automatically by the application.
 
 > **Important:** These credentials are for demonstration and development purposes only. Do not use them in a production environment.
 
----
+<br>
 
 ## 💾 Data Storage
 
@@ -255,7 +254,7 @@ This means:
 
 The `db/schema.sql` file contains a draft SQLite schema for the application's data. However, SQLite has **not yet been integrated** with the Java application.
 
----
+<br>
 
 ## 👥 Development Team
 
