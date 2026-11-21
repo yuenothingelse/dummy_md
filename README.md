@@ -80,6 +80,8 @@ Customer menggunakan aplikasi untuk melihat produk dan melakukan pembelian.
 
 **Note:** Aplikasi saat ini menggunakan repository berbasis in-memory (`HashMap`). File `db/schema.sql` merupakan rancangan skema SQLite dan belum dihubungkan ke implementasi aplikasi.
 
+<br>
+
 
 ## 🗂️ Project Structure
 
