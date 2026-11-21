@@ -34,7 +34,9 @@ Proyek ini menyediakan fitur pengelolaan produk, pengguna, keranjang belanja, ch
 | 🖥️ Multiple Interfaces | Menggunakan GUI Java Swing atau CLI |
 | 🧱 Layered Structure | Memisahkan model, repository, service, dan antarmuka aplikasi |
 
+
 ---
+
 
 ## 🔄 Application Workflow
 
@@ -61,6 +63,9 @@ Customer menggunakan aplikasi untuk melihat produk dan melakukan pembelian.
 6. Customer memilih metode pembayaran yang tersedia.
 7. Customer dapat melihat riwayat serta detail transaksi.
 
+---
+
+
 ## 🛠️ Technologies
 
 | Technology | Usage |
@@ -72,7 +77,9 @@ Customer menggunakan aplikasi untuk melihat produk dan melakukan pembelian.
 | 🗄️ SQLite (schema draft) | Rancangan skema database pada `db/schema.sql` |
 | 🛠️ `javac` / `java` | Compilation and execution |
 
+
 **Note:** Aplikasi saat ini menggunakan repository berbasis in-memory (`HashMap`). File `db/schema.sql` merupakan rancangan skema SQLite dan belum dihubungkan ke implementasi aplikasi.
+
 
 ## 🗂️ Project Structure
 
@@ -130,6 +137,9 @@ supermarket-app/
 └── LICENSE
 ```
 
+---
+
+
 ## 📋 Requirements
 
 Before running the project, make sure you have:
@@ -144,6 +154,9 @@ Check your Java installation:
 java -version
 javac -version
 ```
+
+---
+
 
 ## 🚀 Run the Project
 
@@ -227,6 +240,8 @@ Sample products are also initialized automatically by the application.
 
 > **Important:** These credentials are for demonstration and development purposes only. Do not use them in a production environment.
 
+---
+
 ## 💾 Data Storage
 
 The current application stores data using **in-memory repositories based on `HashMap`**.
@@ -238,6 +253,8 @@ This means:
 - Product and transaction changes are not retained after the application is closed.
 
 The `db/schema.sql` file contains a draft SQLite schema for the application's data. However, SQLite has **not yet been integrated** with the Java application.
+
+---
 
 ## 👥 Development Team
 
