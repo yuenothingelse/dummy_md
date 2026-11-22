@@ -1,4 +1,4 @@
-<div align="center">
+ <div align="center">
 
 # Supermarket App
 
@@ -13,7 +13,7 @@
 
 Aplikasi pengelolaan supermarket yang dikembangkan menggunakan **Java** dengan dua pilihan antarmuka, yaitu **Graphical User Interface (GUI)** menggunakan Java Swing dan **Command Line Interface (CLI)**.
 
-Proyek ini menyediakan fitur pengelolaan produk, pengguna, keranjang belanja, checkout, dan transaksi dengan dua peran pengguna: **Admin** dan **Customer**.
+Proyek ini menyediakan fitur pengelolaan produk, pengguna, keranjang belanja, checkout, dan transaksi dengan dua peran pengguna, yaitu **Admin** dan **Customer**.
 
 </div>
 
@@ -34,9 +34,7 @@ Proyek ini menyediakan fitur pengelolaan produk, pengguna, keranjang belanja, ch
 | 🖥️ Multiple Interfaces | Menggunakan GUI Java Swing atau CLI |
 | 🧱 Layered Structure | Memisahkan model, repository, service, dan antarmuka aplikasi |
 
-
-<br>
-
+---
 
 ## 🔀 Application Workflow
 
@@ -63,25 +61,22 @@ Customer menggunakan aplikasi untuk melihat produk dan melakukan pembelian.
 6. Customer memilih metode pembayaran yang tersedia.
 7. Customer dapat melihat riwayat serta detail transaksi.
 
-<br>
+---
 
-
-## 🛠️ Technologies
+## 🔗 Technologies
 
 | Technology | Usage |
 | -------------------------------- | -------------------------------- |
-| ☕ Java 17+ | Programming language |
-| 🖼️ Java Swing | Graphical User Interface |
-| ⚙️ Java AWT | UI components and event handling |
-| 🧰 Java Collections (`HashMap`) | Penyimpanan data sementara di memori |
-| 🗄️ SQLite (schema draft) | Rancangan skema database pada `db/schema.sql` |
-| 🛠️ `javac` / `java` | Compilation and execution |
+| Java 17+ | Bahasa pemrograman utama |
+| Java Swing | Pengembangan antarmuka grafis |
+| Java AWT | Komponen antarmuka dan penanganan event |
+| Java Collections (`HashMap`) | Penyimpanan data sementara di memori |
+| SQLite (schema draft) | Rancangan skema database pada `db/schema.sql` |
+| `javac` / `java` | Kompilasi dan menjalankan aplikasi |
 
+**Catatan:** Aplikasi saat ini menggunakan repository berbasis in-memory (`HashMap`). File `db/schema.sql` merupakan rancangan skema SQLite dan belum dihubungkan dengan implementasi aplikasi.
 
-**Note:** Aplikasi saat ini menggunakan repository berbasis in-memory (`HashMap`). File `db/schema.sql` merupakan rancangan skema SQLite dan belum dihubungkan ke implementasi aplikasi.
-
-<br>
-
+---
 
 ## 🗂️ Project Structure
 
@@ -139,47 +134,45 @@ supermarket-app/
 └── LICENSE
 ```
 
-<br>
-
+---
 
 ## 📋 Requirements
 
-Before running the project, make sure you have:
+Sebelum menjalankan proyek, pastikan perangkat telah memiliki:
 
-- ☕ **Java Development Kit (JDK) 17 or newer**
-- 💻 Terminal / Command Prompt, or an IDE such as Visual Studio Code
-- 🖥️ Desktop environment that supports Java Swing (for GUI mode)
+- ☕ **Java Development Kit (JDK) 17 atau versi lebih baru**
+- 💻 Terminal / Command Prompt atau IDE seperti Visual Studio Code
+- 🖥️ Lingkungan desktop yang mendukung Java Swing (untuk mode GUI)
 
-Check your Java installation:
+Periksa instalasi Java melalui perintah berikut:
 
 ```bash
 java -version
 javac -version
 ```
 
-<br>
+---
 
+## ▶️ Run the Project
 
-## 🚀 Run the Project
-
-Run all commands from the project's root directory (the directory containing `src/`).
+Jalankan seluruh perintah dari direktori utama proyek (direktori yang berisi folder `src/`).
 
 ### macOS / Linux
 
-**1. Compile the source code**
+**1. Kompilasi source code**
 
 ```bash
 mkdir -p out
 javac --release 17 -d out $(find src -name "*.java")
 ```
 
-**2. Run GUI mode**
+**2. Jalankan mode GUI**
 
 ```bash
 java -cp out supermarket.gui.MainGUI
 ```
 
-**Or run CLI mode**
+**Atau jalankan mode CLI**
 
 ```bash
 java -cp out supermarket.Main
@@ -187,20 +180,20 @@ java -cp out supermarket.Main
 
 ### Windows (PowerShell)
 
-**1. Compile the source code**
+**1. Kompilasi source code**
 
 ```powershell
 New-Item -ItemType Directory -Force out
 javac --release 17 -d out (Get-ChildItem -Path src -Recurse -Filter *.java).FullName
 ```
 
-**2. Run GUI mode**
+**2. Jalankan mode GUI**
 
 ```powershell
 java -cp out supermarket.gui.MainGUI
 ```
 
-**Or run CLI mode**
+**Atau jalankan mode CLI**
 
 ```powershell
 java -cp out supermarket.Main
@@ -215,92 +208,93 @@ javac --release 17 -d out @sources.txt
 java -cp out supermarket.gui.MainGUI
 ```
 
-To run CLI mode, replace the last command with:
+Untuk menjalankan mode CLI, ganti perintah terakhir dengan:
 
 ```bat
 java -cp out supermarket.Main
 ```
 
-### ⚡ Windows GUI Script
+### 💠 Windows GUI Script
 
-You can also run the GUI version on Windows by executing:
+Pengguna Windows juga dapat menjalankan aplikasi versi GUI melalui file berikut:
 
 ```text
 run-gui.bat
 ```
 
+---
+
 ## 🔑 Demo Accounts
 
-The application initializes sample accounts when it starts.
+Aplikasi menyediakan beberapa akun contoh yang diinisialisasi secara otomatis saat aplikasi dijalankan.
 
 | Role | Username | Password |
 | ---------------- | ---------------- | ---------------- |
-| 🛠️ Admin | `admin` | `admin123` |
+| 👤 Admin | `admin` | `admin123` |
 | 🛒 Customer | `budi` | `budi123` |
 
-Sample products are also initialized automatically by the application.
+Data produk contoh juga akan diinisialisasi secara otomatis oleh aplikasi.
 
-> **Important:** These credentials are for demonstration and development purposes only. Do not use them in a production environment.
+> **Penting:** Akun tersebut hanya digunakan untuk keperluan demonstrasi dan pengembangan. Jangan gunakan kredensial ini pada lingkungan produksi.
 
-<br>
+---
 
 ## 💾 Data Storage
 
-The current application stores data using **in-memory repositories based on `HashMap`**.
+Aplikasi saat ini menyimpan data menggunakan **in-memory repository berbasis `HashMap`**.
 
-This means:
+Artinya:
 
-- Sample data is initialized when the application starts.
-- Changes made during a session are stored temporarily in memory.
-- Product and transaction changes are not retained after the application is closed.
+- Data contoh akan diinisialisasi setiap kali aplikasi dijalankan.
+- Perubahan data selama aplikasi berjalan hanya disimpan sementara di memori.
+- Perubahan produk dan transaksi tidak akan tersimpan setelah aplikasi ditutup.
 
-The `db/schema.sql` file contains a draft SQLite schema for the application's data. However, SQLite has **not yet been integrated** with the Java application.
+File `db/schema.sql` berisi rancangan skema SQLite untuk struktur data aplikasi. Namun, SQLite **belum diintegrasikan** dengan implementasi Java saat ini.
 
-<br>
+---
 
 ## 👥 Development Team
 
-This project was developed collaboratively by:
+Proyek ini dikembangkan secara kolaboratif oleh enam anggota tim dengan pembagian tugas sebagai berikut:
 
-| GitHub | Name |
-| -------------------------------- | ---------------- |
-| [@abrarMuda](https://github.com/abrarMuda) | Abrar |
-| [@xanxanhub](https://github.com/xanxanhub) | Ihsan |
-| [@Hafidhfrr](https://github.com/Hafidhfrr) | Hafidh |
-| [@PutriRahmatulUlya](https://github.com/PutriRahmatulUlya) | Putri |
-| [@nailasyakira](https://github.com/nailasyakira) | Naila |
-| [@yuenothingelse](https://github.com/yuenothingelse) | Mirza |
+| GitHub | Nama | Pembagian Tugas |
+| -------------------------------- | ---------------- | -------------------------------- |
+| [@nailasyakira](https://github.com/nailasyakira) | Naila Syakira Bahri | Membuat folder `db` dan file `run-gui.bat`. Berkoordinasi serta membantu anggota lain ketika mengalami kendala. |
+| [@PutriRahmatulUlya](https://github.com/PutriRahmatulUlya) | Putri Rahmatul 'Ulya | Membuat package `ui`, `Main.java`, dan `AppContext.java`. Membantu integrasi antarbagian program. |
+| [@abrarMuda](https://github.com/abrarMuda) | Abrar Muda | Membuat package `model` dan `exception`. Memastikan setiap fitur berjalan sesuai fungsinya. |
+| [@yuenothingelse](https://github.com/yuenothingelse) | Mirza Nur Akhyar | Membuat dokumentasi proyek melalui `README.md` serta memperbaiki error yang ditemukan selama pengujian. |
+| [@xanxanhub](https://github.com/xanxanhub) | M. Ihsan Syahni | Membuat package `repository` dan `service`. Melakukan verifikasi serta pengujian akhir aplikasi. |
+| [@Hafidhfrr](https://github.com/Hafidhfrr) | M. Hafidh Farras | Membuat package `gui` serta melakukan pengecekan dan pengujian program. |
 
-<br>
+---
 
 ## 📦 Repository Maintainer
 
-**Naila**
+**Naila Syakira Bahri**
 
 GitHub: [@nailasyakira](https://github.com/nailasyakira)
 
-The repository is maintained by Naila to organize, manage, and publish the project source code.
+Repository ini dikelola oleh Naila untuk mengatur, mengoordinasikan, dan memublikasikan source code proyek.
 
-<br>
+---
 
-## 🎯 Purpose
+## 📌 Purpose
 
-This project was developed as a programming group project to apply object-oriented programming concepts through the development of a supermarket management application.
+Proyek ini dikembangkan sebagai tugas kelompok pemrograman untuk menerapkan konsep **Object-Oriented Programming (OOP)** melalui pembuatan aplikasi manajemen supermarket.
 
-Through this project, the development team practiced:
+Melalui proyek ini, anggota tim mempraktikkan beberapa hal berikut:
 
-- 🧩 Applying object-oriented programming concepts.
-- 🏗️ Designing Java classes, objects, and relationships.
-- 🗃️ Separating application logic using model, repository, and service layers.
-- 🎨 Developing desktop interfaces with Java Swing.
-- ⌨️ Building a command-line interface.
-- 🔐 Implementing authentication and role-based access.
-- 🛒 Managing products, shopping carts, and transactions.
-- 🤝 Collaborating through Git and GitHub.
-<br>
+- 🧩 Menerapkan konsep pemrograman berorientasi objek.
+- 🏗️ Merancang class, object, dan hubungan antarkomponen Java.
+- 🗃️ Memisahkan logika aplikasi menggunakan model, repository, dan service.
+- 🎨 Mengembangkan antarmuka desktop menggunakan Java Swing.
+- ⌨️ Membangun antarmuka berbasis command line.
+- 🔐 Menerapkan autentikasi dan pembagian hak akses berdasarkan peran pengguna.
+- 🛒 Mengelola produk, keranjang belanja, dan transaksi.
+- 🤝 Berkolaborasi dalam pengembangan proyek menggunakan Git dan GitHub.
 
 <div align="center">
-  
+
 ## Made with Java ☕ and teamwork
 
 </div>
