@@ -1,1 +1,1 @@
-jadi commit angin
+tak pa sekali kali
